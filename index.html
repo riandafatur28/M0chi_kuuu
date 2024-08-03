@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <title>Mochiii</title>
+    <style>
+      .primary {
+        background-color: #db2777; /* Warna pink */
+      }
+      .secondary {
+        background-color: #fb7185;
+      }
+      .btn {
+        background-color: #fecdd3;
+        transition: background-color 0.3s ease;
+      }
+      .btn:hover {
+        background-color: #f43f5e;
+        color: white; /* Warna hover untuk tombol */
+      }
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+      .primary-button {
+        background-color: #fb7185;
+        transition: background-color 0.3s ease;
+      }
+      .primary-button:hover {
+        background-color: #f43f5e; /* Warna hover untuk tombol */
+      }
+      .navbar {
+        background-color: #fdf2f8;
+      }
+      .group:hover img {
+        transform: scale(1.05);
+      }
+      .group:hover h3 {
+        color: #ff6347;
+      }
+      .footer-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition: transform 0.3s ease;
+      }
+      .footer-image:hover {
+        transform: scale(1.1);
+      }
+      .centered-text {
+        text-align: center;
+      }
+      /* Animasi Fade-In */
+      .fade-in {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+      .fade-in.visible {
+        opacity: 1;
+      }
+      /* Animasi Slide-In dari Bawah */
+      .slide-in {
+        transform: translateY(20px);
+        opacity: 0;
+        transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+      }
+      .slide-in.visible {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- promo start -->
+    <div class="secondary px-4 py-3 text-white">
+      <p class="text-center text-sm font-medium">
+        PENGEN MOCHI??
+        <a href="#" class="inline-block underline">Beli Aja Disini!!!</a>
+      </p>
+    </div>
+    <!-- promo end -->
+
+    <!-- Navbar Start -->
+    <header class="border-b border-gray-200 navbar slide-in"">
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div class="flex flex-col items-center gap-4 md:flex-row md:items-center md:justify-between">
+          <div class="flex items-center">
+            <img src="img/1722615357500.png" alt="M0chi_kuuu logo" class="w-24 h-24 md:w-32 md:h-32" />
+            <div class="ml-4 text-center md:text-left">
+              <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">M0chi_kuuu</h1>
+              <p class="mt-1.5 text-sm text-gray-500">Cari mochi beraneka rasa, enak, dan terjangkau, semuanya ada disini</p>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-4 md:flex-row md:items-center md:justify-end mt-4 md:mt-0">
+            <a href="#produk" class="inline-flex items-center justify-center gap-1.5 rounded border border-gray-200 bg-gray-100 px-5 py-3 text-gray-900 transition hover:text-gray-700 focus:outline-none focus:ring-rose-400">
+              <span class="text-sm font-medium">Lihat Menu</span>
+              <svg class="h-8 w-8 text-red-500 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </a>
+            <a href="https://wa.me/+6285216054364?text=Halo kak saya mau beli Mochi" class="group block p-5 border rounded-lg transition-transform duration-300">
+              <button class="inline-block rounded primary-button px-5 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring" type="button">Chat Admin</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Landing Page Start -->
+    <section class="slide-in fade-in">
+      <div class="mx-auto max-w-xxl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div class="secondary p-8 md:p-12 lg:px-16 lg:py-24 flex items-center justify-center">
+            <div class="mx-auto max-w-xl text-center">
+              <h2 class="text-2xl font-bold text-white md:text-4xl">M0chi_kuuu</h2>
+              <p class="hidden text-white/90 sm:mt-5 sm:block sm:text-lg md:text-xl lg:text-xl">
+                M0chi_kuuu menyajikan mochi lezat dan unik di Lawang, Malang. Sejak 2024, kami menawarkan berbagai varian mochi dengan isian coklat lumer dan cream strawberry, dibuat dengan bahan berkualitas. Temukan kelezatan mochi kami
+                dan nikmati pengalaman manis yang tak terlupakan!
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2">
+            <img alt="Gambar Mochi 1" src="img/mochi1.jpg" class="h-40 w-full object-cover sm:h-56 md:h-full transition-transform duration-300 ease-in-out transform hover:scale-105" />
+            <img alt="Gambar Mochi 2" src="img/mochi2.jpg" class="h-40 w-full object-cover sm:h-56 md:h-full transition-transform duration-300 ease-in-out transform hover:scale-105" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Landing Page End -->
+
+    <!-- Produk Start -->
+    <section class="container max-w-6xl mx-auto py-8" id="produk">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-bold text-rose-500 md:text-3xl">Menu Kami</h2>
+      </div>
+      <div class="flex justify-center flex-wrap gap-10">
+        <a href="https://wa.me/+6285216054364?text=Halo kak saya mau beli Choco Strawberry Mochi" class="group block p-5 border rounded-lg transition-transform duration-300 hover:scale-105 max-w-xs">
+          <img src="img/Strawberry Mochi.jpg" alt="Strawberry Mochi" class="aspect-square w-full rounded object-cover transition-transform duration-300" />
+          <div class="mt-5 text-center">
+            <h3 class="text-lg text-gray-900 font-semibold group-hover:underline group-hover:underline-offset-4 transition-colors duration-300">Choco Strawberry Mochi</h3>
+            <p class="mt-2 text-sm text-gray-500">Mochi dengan isian coklat lumer dan perpaduan cream strawberry dijamin pasti bikin nagih</p>
+            <p class="mt-3 text-xl text-gray-900">Rp.6k</p>
+          </div>
+        </a>
+        <a href="https://wa.me/+6285216054364?text=Halo kak saya mau beli Red Bean Mochi" class="group block p-5 border rounded-lg transition-transform duration-300 hover:scale-105 max-w-xs">
+          <img src="img/peanut.jpg" alt="Strawberry Mochi" class="aspect-square w-full rounded object-cover transition-transform duration-300" />
+          <div class="mt-5 text-center">
+            <h3 class="text-lg text-gray-900 font-semibold group-hover:underline group-hover:underline-offset-4 transition-colors duration-300">Red Bean Mochi</h3>
+            <p class="mt-2 text-sm text-gray-500">Mochi dengan isian krim kacang dan strawberry, kombinasi gurih dan manis yang memanjakan lidah Anda dengan setiap gigitan!</p>
+            <p class="mt-3 text-xl text-gray-900">Rp.6k</p>
+          </div>
+        </a>
+        <a href="https://wa.me/+6285216054364?text=Halo kak saya mau beli Cream Berry Mochi" class="group block p-5 border rounded-lg transition-transform duration-300 hover:scale-105 max-w-xs">
+          <img src="img/cream str.png" alt="Strawberry Mochi" class="aspect-square w-full rounded object-cover transition-transform duration-300" />
+          <div class="mt-5 text-center">
+            <h3 class="text-lg text-gray-900 font-semibold group-hover:underline group-hover:underline-offset-4 transition-colors duration-300">Cream Berry Mochi</h3>
+            <p class="mt-2 text-sm text-gray-500">Mochi dengan krim vanila yang lumer dan perpaduan strawberry, dijamin bikin lidah bergoyang!</p>
+            <p class="mt-3 text-xl text-gray-900">Rp.6k</p>
+          </div>
+        </a>
+        <a href="https://wa.me/+6285216054364?text=Halo kak saya mau beli Blueberry Flavour Mochi" class="group block p-5 border rounded-lg transition-transform duration-300 hover:scale-105 max-w-xs">
+          <img src="img/berry.jpg" alt="Strawberry Mochi" class="aspect-square w-full rounded object-cover transition-transform duration-300" />
+          <div class="mt-5 text-center">
+            <h3 class="text-lg text-gray-900 font-semibold group-hover:underline group-hover:underline-offset-4 transition-colors duration-300">Blueberry Flavour Mochi</h3>
+            <p class="mt-2 text-sm text-gray-500">Mochi dengan krim blueberry yang lumer, pasti akan menggoyang lidah Anda dengan kelezatannya!</p>
+            <p class="mt-3 text-xl text-gray-900">Rp.8k</p>
+          </div>
+        </a>
+        <a href="https://wa.me/+6285216054364?text=Halo kak saya mau beli Lemon Flavour Mochiy" class="group block p-5 border rounded-lg transition-transform duration-300 hover:scale-105 max-w-xs">
+          <img src="img/lemon.jpg" alt="Strawberry Mochi" class="aspect-square w-full rounded object-cover transition-transform duration-300" />
+          <div class="mt-5 text-center">
+            <h3 class="text-lg text-gray-900 font-semibold group-hover:underline group-hover:underline-offset-4 transition-colors duration-300">Lemon Flavour Mochi</h3>
+            <p class="mt-2 text-sm text-gray-500">Mochi dengan krim lemon yang menyegarkan dan lumer, menawarkan sensasi rasa cerah dan asam manis yang akan memanjakan lidah Anda!</p>
+            <p class="mt-3 text-xl text-gray-900">Rp.6k</p>
+          </div>
+        </a>
+        <a href="https://wa.me/+6285216054364?text=Halo kak saya mau beli Mango Flavour Mochi" class="group block p-5 border rounded-lg transition-transform duration-300 hover:scale-105 max-w-xs">
+          <img src="img/mango.jpg" alt="Strawberry Mochi" class="aspect-square w-full rounded object-cover transition-transform duration-300" />
+          <div class="mt-5 text-center">
+            <h3 class="text-lg text-gray-900 font-semibold group-hover:underline group-hover:underline-offset-4 transition-colors duration-300">Mango Flavour Mochi</h3>
+            <p class="mt-2 text-sm text-gray-500">"Mochi dengan krim mangga yang lumer dan segar, membuat setiap gigitan penuh dengan kelezatan tropis yang menggugah selera!"</p>
+            <p class="mt-3 text-xl text-gray-900">Rp.6k</p>
+          </div>
+        </a>
+        <a href="https://wa.me/+6285216054364?text=Halo kak saya mau beli Cookies and Cream Mochi" class="group block p-5 border rounded-lg transition-transform duration-300 hover:scale-105 max-w-xs">
+          <img src="img/oreo.jpg" alt="Strawberry Mochi" class="aspect-square w-full rounded object-cover transition-transform duration-300" />
+          <div class="mt-5 text-center">
+            <h3 class="text-lg text-gray-900 font-semibold group-hover:underline group-hover:underline-offset-4 transition-colors duration-300">Cookies and Cream Mochi</h3>
+            <p class="mt-2 text-sm text-gray-500">Mochi dengan krim cookies and cream yang kaya dan lembut, memadukan rasa coklat dan krim yang menggoda untuk pengalaman manis yang tak terlupakan!</p>
+            <p class="mt-3 text-xl text-gray-900">Rp.6k</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Produk End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-gray-100 slide-in">
+      <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center text-teal-600">
+          <a href="https://Instagram.com/_aalyakf?igsh=cjN6OHFlbng0bDlk" class="text-center group">
+            <img class="footer-image h-40" src="img/1722615357500.png" alt="Description of image" />
+            <h3 class="text-2xl font-bold text-rose-400 sm:text-3xl mt-4 transition-colors duration-300 group-hover:text-rose-600">M0chi_kuuu</h3>
+          </a>
+          <h4 class="text-lg font-semibold mt-4 text-rose-600">Hadirkan keajaiban Mochi disetiap gigitannya!</h4>
+          <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">Lawang, Malang, Jawa Timur <br />Since 2024</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script>
+      // JavaScript to add the 'visible' class to elements when they scroll into view
+      document.addEventListener('DOMContentLoaded', () => {
+        const fadeInElements = document.querySelectorAll('.fade-in');
+        const slideInElements = document.querySelectorAll('.slide-in');
+
+        const observerOptions = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.1,
+        };
+
+        const handleIntersection = (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        };
+
+        const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+        fadeInElements.forEach((element) => observer.observe(element));
+        slideInElements.forEach((element) => observer.observe(element));
+      });
+    </script>
+  </body>
+</html>
